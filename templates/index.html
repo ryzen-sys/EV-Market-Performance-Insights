@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Market Insights</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #172b4d;
+        }
+
+        nav {
+            background: #102a43;
+            color: white;
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        nav h2 {
+            color: #f6c85f;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            background: linear-gradient(120deg, #102a43, #168aad);
+            color: white;
+            padding: 90px 8%;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            max-width: 700px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.7;
+            max-width: 700px;
+            margin-bottom: 28px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #f6c85f;
+            color: #102a43;
+            padding: 14px 22px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 55px 8%;
+        }
+
+        .section h2 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            line-height: 1.7;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+            margin-top: 28px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #102a4312;
+        }
+
+        .card h3 {
+            color: #168aad;
+            margin-bottom: 12px;
+        }
+
+        .about {
+            background: white;
+        }
+
+        footer {
+            background: #102a43;
+            color: white;
+            text-align: center;
+            padding: 24px;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                margin-left: 0;
+                margin-right: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>⚡ EV Market Insights</h2>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#analysis">Analysis</a>
+            <a href="#about">About</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>Electric Vehicle Market Analysis</h1>
+
+        <p>
+            Explore electric vehicle sales, leading manufacturers,
+            battery technologies and customer ratings from 2018 to 2026.
+            Discover meaningful insights from EV market data.
+        </p>
+
+        <a href="#analysis" class="btn">Explore Analysis →</a>
+    </section>
+
+    <section class="section" id="analysis">
+        <h2>Explore Our Analysis</h2>
+        <p>
+            This project uses data visualization to understand
+            electric vehicle market performance.
+        </p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>📊 Sales Analysis</h3>
+                <p>Explore sales trends across manufacturers and regions.</p>
+            </div>
+
+            <div class="card">
+                <h3>🔋 Battery Technology</h3>
+                <p>Understand battery types and their distribution.</p>
+            </div>
+
+            <div class="card">
+                <h3>🌍 Regional Markets</h3>
+                <p>Compare electric vehicle sales across market regions.</p>
+            </div>
+
+            <div class="card">
+                <h3>⭐ Customer Ratings</h3>
+                <p>Explore customer ratings and vehicle counts.</p>
+            </div>
+        </div>
+    </section>
+
+<section class="section" id="dashboard">
+    <h2>Interactive EV Market Dashboard</h2>
+    <p>Explore EV sales, battery technologies and customer ratings.</p>
+
+    <iframe
+        src="https://public.tableau.com/views/EVMARKETPERFORMANCEANDINSIGHTS/ElectricVehicleMarketPerfomanceInsights_1?:showVizHome=no&:embed=true"
+        width="100%"
+        height="750"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+</section>
+
+    <section class="section about" id="about">
+        <h2>About This Project</h2>
+        <p>
+            Electric Vehicle Market Performance and Insights is a
+            data analytics project built using Tableau and Flask.
+            It aims to present EV market information through
+            interactive visualizations and a simple web interface.
+        </p>
+    </section>
+
+    <footer>
+        <p>EV Market Insights | Data Analytics Project</p>
+    </footer>
+
+</body>
+</html>
